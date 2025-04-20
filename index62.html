@@ -1,0 +1,56 @@
+<html>
+    <head><title>Student TASK</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                        <form id="stdForm">
+                            <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input required type="text" id="fname" class="form-control mb-4">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">First Name</label>
+                                <input required type="text" id="lname" class="form-control mb-4">
+                                </div>
+                                <div class="form-group">
+                                    <label for="fname">Contact</label>
+                                    <input requireed type="text" id="contact" class="form-control mb-4">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-mail</label>
+                                        <input required type="text" id="email" class="form-control mb-4">
+                                        </div>
+<button type="submit" id="submit" class="btn btn-sm btn-outline-info">submit</button>
+<button type="button" id="stdUpdatebtn" class="btn btn-sm btn-outline-info d-none">Update Student</button>
+                        </form>
+                </div>
+                <div class="col-md-8">
+                    <table class="table table-bodered" id="table">
+                        <thead>
+                            <tr>
+                                <th>sr.no</th>
+                                <th>first name</th>
+                                <th>last name</th>
+                                <th>contact</th>
+                                <th>e-mail</th>
+                                <th>edit</th>
+                                <th>remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stdContainer">
+
+                        </tbody>
+                    </table>
+                    <p class="alert alert-info" id="alertmsg">No Student Added yet</p>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./Assets/JS/app62.js"></script>
+    </body>
+</html>
